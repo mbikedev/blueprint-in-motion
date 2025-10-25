@@ -1,0 +1,190 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id              String    @id @default(cuid())
+  email           String    @unique
+  password        String
+  name            String?
+  avatar          String?
+  bio             String?
+  emailVerified   DateTime?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  membership      Membership?
+  posts           Post[]
+  comments        Comment[]
+  notifications   Notification[]
+  invoices        Invoice[]
+  sessions        Session[]
+}
+
+model Membership {
+  id              String    @id @default(cuid())
+  userId          String    @unique
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  tier            MembershipTier
+  status          MembershipStatus
+  stripeCustomerId String?  @unique
+  stripeSubscriptionId String? @unique
+  
+  startDate       DateTime  @default(now())
+  endDate         DateTime?
+  cancelledAt     DateTime?
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Category {
+  id              String    @id @default(cuid())
+  name            String    @unique
+  slug            String    @unique
+  description     String?
+  order           Int       @default(0)
+  
+  posts           Post[]
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Post {
+  id              String    @id @default(cuid())
+  title           String
+  content         String
+  type            PostType  @default(TEXT)
+  mediaUrl        String?
+  
+  authorId        String
+  author          User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  
+  categoryId      String
+  category        Category  @relation(fields: [categoryId], references: [id])
+  
+  subcategory     String?
+  isPinned        Boolean   @default(false)
+  viewCount       Int       @default(0)
+  
+  comments        Comment[]
+  reactions       Reaction[]
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Comment {
+  id              String    @id @default(cuid())
+  content         String
+  
+  authorId        String
+  author          User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  
+  postId          String
+  post            Post      @relation(fields: [postId], references: [id], onDelete: Cascade)
+  
+  parentId        String?
+  parent          Comment?  @relation("CommentReplies", fields: [parentId], references: [id])
+  replies         Comment[] @relation("CommentReplies")
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Reaction {
+  id              String    @id @default(cuid())
+  type            String
+  
+  userId          String
+  postId          String
+  post            Post      @relation(fields: [postId], references: [id], onDelete: Cascade)
+  
+  createdAt       DateTime  @default(now())
+  
+  @@unique([userId, postId, type])
+}
+
+model Notification {
+  id              String    @id @default(cuid())
+  type            NotificationType
+  title           String
+  message         String
+  link            String?
+  read            Boolean   @default(false)
+  
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  createdAt       DateTime  @default(now())
+}
+
+model Invoice {
+  id              String    @id @default(cuid())
+  invoiceNumber   String    @unique
+  stripeInvoiceId String?   @unique
+  
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  amount          Float
+  currency        String    @default("EUR")
+  status          InvoiceStatus
+  pdfUrl          String?
+  
+  billingPeriodStart DateTime
+  billingPeriodEnd   DateTime
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Session {
+  id              String    @id @default(cuid())
+  sessionToken    String    @unique
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expires         DateTime
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+enum MembershipTier {
+  INITIATION
+  COMMITMENT
+}
+
+enum MembershipStatus {
+  ACTIVE
+  CANCELLED
+  EXPIRED
+  PAUSED
+}
+
+enum PostType {
+  TEXT
+  VIDEO
+  AUDIO
+  IMAGE
+}
+
+enum NotificationType {
+  COMMENT
+  MENTION
+  PAYMENT
+  ANNOUNCEMENT
+  SYSTEM
+}
+
+enum InvoiceStatus {
+  PENDING
+  PAID
+  FAILED
+  CANCELLED
+}
