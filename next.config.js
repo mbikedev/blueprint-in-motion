@@ -2,19 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+      },
+    ],
   },
-  experimental: {
-    serverComponentsExternalPackages: ['@prisma/client', '@prisma/engines'],
-  },
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.externals.push({
-        '@prisma/client': 'commonjs @prisma/client',
-      })
-    }
-    return config
-  },
+  serverExternalPackages: ['@prisma/client', '@prisma/engines'],
 }
 
 module.exports = nextConfig
