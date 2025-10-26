@@ -37,7 +37,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Link
-              href="/members"
+              href="/members/login"
               className="bg-bim-blue text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
             >
               Member Login
@@ -75,7 +75,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Link
-              href="/members"
+              href="/members/login"
               className="block px-3 py-2 bg-bim-blue text-white rounded-md hover:bg-blue-700 transition-colors"
               onClick={() => setIsOpen(false)}
             >
