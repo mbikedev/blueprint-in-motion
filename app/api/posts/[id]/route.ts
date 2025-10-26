@@ -5,11 +5,12 @@ const prisma = new PrismaClient()
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const post = await prisma.post.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: {
         author: {
           select: {
@@ -37,7 +38,7 @@ export async function GET(
 
     // Increment view count
     await prisma.post.update({
-      where: { id: params.id },
+      where: { id },
       data: { viewCount: { increment: 1 } }
     })
 
