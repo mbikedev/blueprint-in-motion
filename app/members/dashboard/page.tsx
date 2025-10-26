@@ -183,15 +183,15 @@ export default function DashboardPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Membership Card */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="font-oswald text-xl mb-4">Membership</h2>
+              <h2 className="font-oswald text-xl mb-4 text-gray-900">Membership</h2>
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Tier:</span>
-                  <span className="font-semibold">{tierName}</span>
+                  <span className="font-semibold text-gray-900">{tierName}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Price:</span>
-                  <span className="font-semibold">{tierPrice}/month</span>
+                  <span className="font-semibold text-gray-900">{tierPrice}/month</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Status:</span>
@@ -212,7 +212,7 @@ export default function DashboardPage() {
 
             {/* Quick Stats */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="font-oswald text-xl mb-4">Activity</h2>
+              <h2 className="font-oswald text-xl mb-4 text-gray-900">Activity</h2>
               <div className="space-y-4">
                 <div>
                   <p className="text-2xl font-bold text-bim-blue">{user.posts?.length || 0}</p>
@@ -227,10 +227,10 @@ export default function DashboardPage() {
 
             {/* Profile Card */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="font-oswald text-xl mb-4">Profile</h2>
+              <h2 className="font-oswald text-xl mb-4 text-gray-900">Profile</h2>
               <div className="space-y-2 mb-4">
                 <p className="text-sm text-gray-600">Email</p>
-                <p className="font-medium">{user.email}</p>
+                <p className="font-medium text-gray-900">{user.email}</p>
               </div>
               <Link
                 href="/members/profile"
@@ -246,7 +246,7 @@ export default function DashboardPage() {
             {/* Recent Posts */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="font-oswald text-xl">Recent Posts</h2>
+                <h2 className="font-oswald text-xl text-gray-900">Recent Posts</h2>
                 <Link href="/members/posts" className="text-sm text-bim-blue hover:underline">
                   View All
                 </Link>
@@ -255,7 +255,7 @@ export default function DashboardPage() {
                 <div className="space-y-3">
                   {user.posts.map((post) => (
                     <div key={post.id} className="border-l-4 border-bim-blue pl-4 py-2">
-                      <h3 className="font-semibold">{post.title}</h3>
+                      <h3 className="font-semibold text-gray-900">{post.title}</h3>
                       <p className="text-sm text-gray-500">
                         {new Date(post.createdAt).toLocaleDateString()}
                       </p>
@@ -276,7 +276,7 @@ export default function DashboardPage() {
             {/* Notifications */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="font-oswald text-xl">Notifications</h2>
+                <h2 className="font-oswald text-xl text-gray-900">Notifications</h2>
                 <Link href="/members/notifications" className="text-sm text-bim-blue hover:underline">
                   View All
                 </Link>
@@ -306,7 +306,7 @@ export default function DashboardPage() {
 
           {/* Quick Links */}
           <div className="bg-white rounded-lg shadow-md p-6 mt-6">
-            <h2 className="font-oswald text-xl mb-4">Quick Links</h2>
+            <h2 className="font-oswald text-xl mb-4 text-gray-900">Quick Links</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Link
                 href="/members/community"
