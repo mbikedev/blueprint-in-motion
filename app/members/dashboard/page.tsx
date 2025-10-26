@@ -35,11 +35,13 @@ interface User {
 export default function DashboardPage() {
   const router = useRouter()
   const [user, setUser] = useState<User | null>(null)
+  const [stats, setStats] = useState({ totalUsers: 0, totalPosts: 0, activeMembers: 0 })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
     fetchUserData()
+    fetchStats()
   }, [])
 
   const fetchUserData = async () => {
@@ -61,6 +63,18 @@ export default function DashboardPage() {
       console.error(err)
     } finally {
       setLoading(false)
+    }
+  }
+
+  const fetchStats = async () => {
+    try {
+      const response = await fetch('/api/stats')
+      if (response.ok) {
+        const data = await response.json()
+        setStats(data)
+      }
+    } catch (err) {
+      console.error('Failed to fetch stats:', err)
     }
   }
 
@@ -144,6 +158,25 @@ export default function DashboardPage() {
               >
                 Logout
               </button>
+            </div>
+          </div>
+
+          {/* Community Stats */}
+          <div className="bg-gradient-to-r from-bim-blue to-blue-600 rounded-lg shadow-md p-8 mb-8 text-white">
+            <h2 className="font-oswald text-2xl mb-6 text-center">Community Overview</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <p className="text-4xl font-bold mb-2">{stats.totalUsers}</p>
+                <p className="text-blue-100">Registered Members</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold mb-2">{stats.activeMembers}</p>
+                <p className="text-blue-100">Active Memberships</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-bold mb-2">{stats.totalPosts}</p>
+                <p className="text-blue-100">Community Posts</p>
+              </div>
             </div>
           </div>
 
