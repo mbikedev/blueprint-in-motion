@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image' // TODO: Uncomment when book-cover.jpg is added
 
 export default function BookPage() {
   const dimensions = [
@@ -51,7 +51,38 @@ export default function BookPage() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                  <div className="w-full max-w-sm aspect-[3/4] rounded-lg shadow-2xl overflow-hidden">
+                  {/* Book Cover - Placeholder until actual image is added */}
+                  <div className="w-full max-w-sm aspect-[3/4] bg-gradient-to-br from-blue-900 to-blue-800 rounded-lg shadow-2xl flex items-center justify-center border-4 border-amber-500/50">
+                    <div className="text-center p-8">
+                      <h3 className="font-oswald text-4xl mb-8 tracking-wider text-amber-200">BLUEPRINT<br/>IN MOTION</h3>
+
+                      {/* Maze Cube Illustration */}
+                      <div className="my-12 flex justify-center">
+                        <div className="relative w-48 h-48">
+                          {/* Outer cube face */}
+                          <div className="absolute inset-0 border-4 border-amber-400/40"></div>
+                          {/* Inner maze pattern */}
+                          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="#fbbf24" strokeWidth="1" opacity="0.3"/>
+                            <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="none" stroke="#fbbf24" strokeWidth="1" opacity="0.3"/>
+                            <path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="#fbbf24" strokeWidth="1" opacity="0.3"/>
+                          </svg>
+                          {/* Center star */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="text-5xl text-amber-300">✧</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p className="text-amber-200 text-lg mb-8 tracking-wide">FROM SURVIVAL TO LEGACY</p>
+                      <div className="border-t border-amber-500/50 pt-6">
+                        <p className="font-oswald text-2xl tracking-wide text-amber-100">CHRISTIAN DE LEY</p>
+                        <p className="text-sm text-amber-300 mt-2">ARCHITECT OF MOTION</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/*
+                    TODO: Replace with actual image once added to public/images/book-cover.jpg
                     <Image
                       src="/images/book-cover.jpg"
                       alt="Blueprint in Motion: From Survival to Legacy by Christian de Ley"
@@ -60,7 +91,7 @@ export default function BookPage() {
                       className="w-full h-full object-cover"
                       priority
                     />
-                  </div>
+                  */}
                 </div>
               </div>
             </div>
