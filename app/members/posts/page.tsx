@@ -211,16 +211,12 @@ export default function PostsPage() {
                           <span>{post.category.name}</span>
                         </div>
                       </div>
-                      <button
+                      <Link
+                        href={`/members/posts/${post.id}`}
                         className="text-bim-blue hover:underline font-medium"
-                        onClick={() => {
-                          // For now, just scroll to top or show full content
-                          // In future, this could link to individual post page
-                          alert('Full post view coming soon!')
-                        }}
                       >
                         Read more →
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </article>
