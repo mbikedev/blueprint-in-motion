@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createUser } from '@/lib/auth'
 import jwt from 'jsonwebtoken'
 import { cookies } from 'next/headers'
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client/edge'
+import { withAccelerate } from '@prisma/extension-accelerate'
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient().$extends(withAccelerate())
 
 export async function POST(req: NextRequest) {
   try {
