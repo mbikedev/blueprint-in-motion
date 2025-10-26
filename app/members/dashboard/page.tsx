@@ -132,6 +132,29 @@ export default function DashboardPage() {
     day: 'numeric'
   })
 
+  // Calculate journey progress (example based on days active and posts)
+  const daysActive = Math.floor((Date.now() - new Date(user.createdAt).getTime()) / (1000 * 60 * 60 * 24))
+  const postsCount = user.posts?.length || 0
+  const journeyProgress = Math.min(Math.floor((daysActive * 2 + postsCount * 5) / 3), 100)
+
+  const getJourneyStage = (progress: number) => {
+    if (progress < 30) return { stage: 'Survival', icon: '🌱', color: 'from-red-500 to-orange-500' }
+    if (progress < 70) return { stage: 'Growth', icon: '🏔️', color: 'from-blue-500 to-indigo-500' }
+    return { stage: 'Legacy', icon: '👑', color: 'from-yellow-500 to-amber-500' }
+  }
+
+  const currentStage = getJourneyStage(journeyProgress)
+
+  const dimensions = [
+    { name: 'Physical', icon: '💪', color: 'bg-red-100', progress: Math.floor(Math.random() * 100) },
+    { name: 'Emotional', icon: '❤️', color: 'bg-pink-100', progress: Math.floor(Math.random() * 100) },
+    { name: 'Psychological', icon: '🧠', color: 'bg-purple-100', progress: Math.floor(Math.random() * 100) },
+    { name: 'Relational', icon: '🤝', color: 'bg-blue-100', progress: Math.floor(Math.random() * 100) },
+    { name: 'Financial', icon: '💰', color: 'bg-green-100', progress: Math.floor(Math.random() * 100) },
+    { name: 'Spiritual', icon: '🌟', color: 'bg-yellow-100', progress: Math.floor(Math.random() * 100) },
+    { name: 'Quantum', icon: '∞', color: 'bg-violet-100', progress: Math.floor(Math.random() * 100) },
+  ]
+
   return (
     <main className="min-h-screen bg-gray-50">
       <Navigation />
@@ -158,6 +181,69 @@ export default function DashboardPage() {
               >
                 Logout
               </button>
+            </div>
+          </div>
+
+          {/* Transformation Journey */}
+          <div className={`bg-gradient-to-r ${currentStage.color} rounded-lg shadow-md p-8 mb-8 text-white`}>
+            <h2 className="font-oswald text-2xl mb-4 text-center">Your Transformation Journey</h2>
+            <p className="text-center mb-6 text-white/90">From Survival to Legacy</p>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="flex justify-between items-center mb-4">
+                <span className="text-sm font-semibold">🌱 Survival</span>
+                <span className="text-sm font-semibold">🏔️ Growth</span>
+                <span className="text-sm font-semibold">👑 Legacy</span>
+              </div>
+
+              <div className="bg-white/20 rounded-full h-4 overflow-hidden backdrop-blur-sm">
+                <div
+                  className="bg-white h-full rounded-full transition-all duration-1000 ease-out flex items-center justify-end pr-2"
+                  style={{ width: `${journeyProgress}%` }}
+                >
+                  <span className="text-xs font-bold text-gray-700">{journeyProgress}%</span>
+                </div>
+              </div>
+
+              <div className="text-center mt-6">
+                <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+                  <span className="text-3xl">{currentStage.icon}</span>
+                  <div className="text-left">
+                    <p className="text-sm opacity-90">Current Stage</p>
+                    <p className="font-oswald text-xl">{currentStage.stage}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Seven Dimensions Progress */}
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+            <h2 className="font-oswald text-2xl mb-6">Seven Dimensions Mastery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {dimensions.map((dimension) => (
+                <div key={dimension.name} className="text-center">
+                  <div className={`w-16 h-16 rounded-full ${dimension.color} flex items-center justify-center text-2xl mx-auto mb-2`}>
+                    {dimension.icon}
+                  </div>
+                  <p className="font-semibold text-sm mb-2">{dimension.name}</p>
+                  <div className="bg-gray-200 rounded-full h-2 overflow-hidden">
+                    <div
+                      className="bg-bim-blue h-full rounded-full transition-all"
+                      style={{ width: `${dimension.progress}%` }}
+                    ></div>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">{dimension.progress}%</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 text-center">
+              <Link
+                href="/members/dimensions"
+                className="inline-block text-bim-blue hover:underline font-semibold"
+              >
+                Explore All Dimensions →
+              </Link>
             </div>
           </div>
 
