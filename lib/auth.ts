@@ -1,7 +1,5 @@
 import bcrypt from 'bcryptjs'
-import { PrismaClient } from '@prisma/client'
-
-const prisma = new PrismaClient()
+import { prisma } from './prisma'
 
 export async function hashPassword(password: string): Promise<string> {
   return bcrypt.hash(password, 12)

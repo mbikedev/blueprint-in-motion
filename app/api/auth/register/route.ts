@@ -2,9 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createUser } from '@/lib/auth'
 import jwt from 'jsonwebtoken'
 import { cookies } from 'next/headers'
-import { PrismaClient } from '@prisma/client'
-
-const prisma = new PrismaClient()
+import { prisma } from '@/lib/prisma'
 
 export async function POST(req: NextRequest) {
   try {
