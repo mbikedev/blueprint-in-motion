@@ -313,28 +313,28 @@ export default function DashboardPage() {
                 className="text-center p-4 border border-gray-200 rounded-md hover:border-bim-blue hover:bg-blue-50 transition-colors"
               >
                 <div className="text-2xl mb-2">👥</div>
-                <p className="text-sm font-medium">Community</p>
+                <p className="text-sm font-medium text-gray-900">Community</p>
               </Link>
               <Link
                 href="/members/resources"
                 className="text-center p-4 border border-gray-200 rounded-md hover:border-bim-blue hover:bg-blue-50 transition-colors"
               >
                 <div className="text-2xl mb-2">📚</div>
-                <p className="text-sm font-medium">Resources</p>
+                <p className="text-sm font-medium text-gray-900">Resources</p>
               </Link>
               <Link
                 href="/members/events"
                 className="text-center p-4 border border-gray-200 rounded-md hover:border-bim-blue hover:bg-blue-50 transition-colors"
               >
                 <div className="text-2xl mb-2">📅</div>
-                <p className="text-sm font-medium">Events</p>
+                <p className="text-sm font-medium text-gray-900">Events</p>
               </Link>
               <Link
                 href="/contact"
                 className="text-center p-4 border border-gray-200 rounded-md hover:border-bim-blue hover:bg-blue-50 transition-colors"
               >
                 <div className="text-2xl mb-2">💬</div>
-                <p className="text-sm font-medium">Support</p>
+                <p className="text-sm font-medium text-gray-900">Support</p>
               </Link>
             </div>
           </div>
