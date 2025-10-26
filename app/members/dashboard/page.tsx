@@ -288,7 +288,7 @@ export default function DashboardPage() {
                       <div className="flex items-start gap-2">
                         <div className="w-2 h-2 bg-bim-blue rounded-full mt-2"></div>
                         <div className="flex-1">
-                          <p className="font-semibold text-sm">{notification.title}</p>
+                          <p className="font-semibold text-sm text-gray-900">{notification.title}</p>
                           <p className="text-sm text-gray-600">{notification.message}</p>
                           <p className="text-xs text-gray-400 mt-1">
                             {new Date(notification.createdAt).toLocaleDateString()}
