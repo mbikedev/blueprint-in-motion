@@ -49,8 +49,13 @@ export async function POST(req: NextRequest) {
     })
   } catch (error) {
     console.error('Login error:', error)
+    console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace')
+    console.error('Error message:', error instanceof Error ? error.message : String(error))
     return NextResponse.json(
-      { error: 'An error occurred during login' },
+      {
+        error: 'An error occurred during login',
+        details: process.env.NODE_ENV === 'development' ? (error instanceof Error ? error.message : String(error)) : undefined
+      },
       { status: 500 }
     )
   }
