@@ -51,27 +51,15 @@ export default function BookPage() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                  <div className="w-full max-w-sm aspect-[3/4] bg-gradient-to-br from-blue-900 to-blue-800 rounded-lg shadow-2xl flex items-center justify-center border-4 border-amber-500/50">
-                    <div className="text-center p-8">
-                      <h3 className="font-oswald text-4xl mb-8 tracking-wider text-amber-200">BLUEPRINT<br/>IN MOTION</h3>
-
-                      {/* Maze Cube Illustration */}
-                      <div className="my-12 flex justify-center">
-                        <div className="relative w-48 h-48">
-                          <div className="absolute inset-0 border-4 border-amber-400/50 transform rotate-45"></div>
-                          <div className="absolute inset-4 border-4 border-amber-400/30 transform -rotate-12"></div>
-                          <div className="absolute inset-8 flex items-center justify-center">
-                            <span className="text-6xl text-amber-300">✧</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <p className="text-amber-200 text-lg mb-8 tracking-wide">FROM SURVIVAL TO LEGACY</p>
-                      <div className="border-t border-amber-500/50 pt-6">
-                        <p className="font-oswald text-2xl tracking-wide text-amber-100">CHRISTIAN DE LEY</p>
-                        <p className="text-sm text-amber-300 mt-2">ARCHITECT OF MOTION</p>
-                      </div>
-                    </div>
+                  <div className="w-full max-w-sm aspect-[3/4] rounded-lg shadow-2xl overflow-hidden">
+                    <Image
+                      src="/images/book-cover.jpg"
+                      alt="Blueprint in Motion: From Survival to Legacy by Christian de Ley"
+                      width={400}
+                      height={533}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
                   </div>
                 </div>
               </div>
