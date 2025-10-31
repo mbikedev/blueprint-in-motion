@@ -20,7 +20,7 @@ You cannot think clearly when your body is weak. You cannot feel deeply when you
 Physical mastery is not about aesthetics. It's about functionality. About building a body that serves your mission. That sustains your work. That carries you through the demands of legacy-building.
 
 Start here. Master the physical field first. Everything else becomes easier.`,
-    tags: ['Physical', 'Mastery', 'Foundation'],
+    tags: 'Physical,Mastery,Foundation',
     blueprintPrinciple: 'The body is the foundation of all other fields',
     published: true,
     publishedAt: new Date('2025-01-15'),
@@ -60,12 +60,12 @@ export default async function FieldTalkPage({ params }: { params: { slug: string
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">
-            {fieldtalk.tags.map((tag) => (
+            {fieldtalk.tags.split(',').map((tag) => (
               <span
                 key={tag}
                 className="text-xs uppercase tracking-wide text-gray-500 font-semibold bg-gray-100 px-3 py-1 rounded-full"
               >
-                {tag}
+                {tag.trim()}
               </span>
             ))}
           </div>

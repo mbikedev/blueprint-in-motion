@@ -9,7 +9,7 @@ const mockFieldTalks = [
     title: 'On Physical Mastery',
     slug: 'on-physical-mastery',
     content: 'Most men treat their bodies as afterthoughts. A vehicle to carry the mind. This is backwards. The body is the foundation. Without physical mastery, everything else crumbles. Strength. Energy. Vitality. These are not luxuries. They are prerequisites...',
-    tags: ['Physical', 'Mastery'],
+    tags: 'Physical,Mastery',
     blueprintPrinciple: 'The body is the foundation of all other fields',
     published: true,
     publishedAt: new Date('2025-01-15'),
@@ -63,12 +63,12 @@ export default async function FieldTalksPage() {
                 >
                   <article className="border-l-4 border-bim-gold pl-8 py-6 hover:bg-gray-50 transition-colors">
                     <div className="flex flex-wrap gap-2 mb-3">
-                      {talk.tags.map((tag) => (
+                      {talk.tags.split(',').map((tag) => (
                         <span
                           key={tag}
                           className="text-xs uppercase tracking-wide text-gray-500 font-semibold"
                         >
-                          {tag}
+                          {tag.trim()}
                         </span>
                       ))}
                     </div>

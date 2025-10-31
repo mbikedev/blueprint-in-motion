@@ -23,7 +23,9 @@
       "Bash(git fetch:*)",
       "Bash(git pull:*)",
       "Bash(git rebase:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(git checkout:*)",
+      "Bash(DATABASE_URL=\"file:./dev.db\" npx prisma validate:*)"
     ],
     "deny": [],
     "ask": []

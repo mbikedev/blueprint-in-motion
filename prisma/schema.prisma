@@ -61,7 +61,7 @@ model FieldTalk {
   id              String    @id @default(cuid())
   title           String
   content         String
-  tags            String[]
+  tags            String
   blueprintPrinciple String
   slug            String    @unique
   published       Boolean   @default(false)
