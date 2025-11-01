@@ -9,13 +9,26 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 bg-bim-blue text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-oswald text-6xl mb-6">
-            Christian D. L.
-          </h1>
-          <p className="text-2xl text-gray-200">
-            Architect of Blueprint In Motion
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            {/* Profile Image */}
+            <div className="flex-shrink-0">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center overflow-hidden border-4 border-white/20">
+                {/* Placeholder - replace with actual image */}
+                <div className="text-6xl text-white/50">👤</div>
+              </div>
+            </div>
+
+            {/* Text Content */}
+            <div className="text-center md:text-left flex-1">
+              <h1 className="font-oswald text-5xl md:text-6xl mb-4">
+                Christian D. L.
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-200">
+                Architect of Blueprint In Motion
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
