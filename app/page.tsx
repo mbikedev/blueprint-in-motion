@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -13,9 +14,15 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             {/* Profile Image */}
             <div className="flex-shrink-0">
-              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-gray-400 to-gray-500 flex items-center justify-center overflow-hidden border-4 border-white/20">
-                {/* Placeholder - replace with actual image */}
-                <div className="text-6xl text-white/50">👤</div>
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/20">
+                <Image
+                  src="/images/chris.jpeg"
+                  alt="Christian D. L."
+                  width={192}
+                  height={192}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
 
