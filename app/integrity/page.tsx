@@ -9,237 +9,192 @@ export default function IntegrityPage() {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 bg-bim-blue text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-oswald text-6xl mb-6">
-            Integrity
+          <h1 className="font-oswald text-5xl mb-6">
+            Blueprint Integrity Charter
           </h1>
           <p className="text-xl text-gray-200 leading-relaxed">
-            Our foundation. Our protocol. Our commitment.
+            Our covenant. Our foundation. Our sacred commitment.
           </p>
         </div>
       </section>
 
-      {/* Charter */}
+      {/* Founders' Declaration */}
       <section className="py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-oswald text-4xl text-bim-blue mb-8">
-            The BIM Charter
-          </h2>
+          <div className="border-l-4 border-bim-gold pl-8 py-4 mb-16">
+            <h2 className="font-oswald text-3xl text-bim-blue mb-8">
+              Founders' Declaration
+            </h2>
+            <div className="text-lg space-y-4 text-gray-700 leading-relaxed">
+              <p>I did not create Blueprint in Motion to extract or to manipulate.</p>
+              <p>I created it to restore integrity in a world that has turned awareness into a product.</p>
 
-          <div className="space-y-8 text-gray-700 leading-relaxed">
-            <div className="border-l-4 border-bim-gold pl-8">
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                1. Truth Over Comfort
-              </h3>
-              <p className="text-lg">
-                We speak what is real, not what feels good. Truth serves growth.
-                Comfort serves stagnation. We choose growth.
+              <p className="pt-4">
+                Every line of code, every word, every design and decision must serve one purpose:<br />
+                to elevate human consciousness, not to harvest it.
+              </p>
+
+              <p className="pt-4">
+                Technology should mirror the human soul, not market it.<br />
+                Privacy is sacred, not negotiable.<br />
+                Transparency is a right, not a privilege.<br />
+                Innovation without ethics is regression disguised as progress.
+              </p>
+
+              <p className="pt-4">
+                No data will ever be sold.<br />
+                No behavior will ever be gamified for profit.<br />
+                No manipulation will ever hide behind optimization.
+              </p>
+
+              <p className="pt-4">
+                Blueprint in Motion exists to remind both creators and users that consciousness must remain the owner of its tools.<br />
+                When technology starts to witness rather than exploit, humanity evolves — not by force, but by presence.
               </p>
             </div>
 
-            <div className="border-l-4 border-bim-gold pl-8">
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                2. Action Over Theory
-              </h3>
-              <p className="text-lg">
-                Knowledge without action is entertainment. We test. We apply. We measure.
-                The blueprint lives in practice, not in pages.
+            {/* Blueprint Principle */}
+            <div className="bg-gray-50 border-2 border-bim-gold p-6 mt-8">
+              <p className="font-oswald text-lg text-bim-blue text-center italic">
+                Blueprint Principle:<br />
+                <span className="text-gray-700 not-italic">
+                  Integrity is not a feature. It is the foundation that allows truth to function.
+                </span>
               </p>
             </div>
+          </div>
 
-            <div className="border-l-4 border-bim-gold pl-8">
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                3. Integration Over Fragmentation
-              </h3>
-              <p className="text-lg">
-                Life is not lived in pieces. Physical. Emotional. Psychological. Relational.
-                Financial. Spiritual. Quantum. Seven fields, one system.
-              </p>
-            </div>
+          {/* Seven Ethical Foundations */}
+          <div className="mb-16">
+            <h2 className="font-oswald text-4xl text-bim-blue mb-12 text-center">
+              The Seven Ethical Foundations
+            </h2>
 
-            <div className="border-l-4 border-bim-gold pl-8">
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                4. Mastery Over Mediocrity
-              </h3>
-              <p className="text-lg">
-                Survival is not enough. Comfort is not the goal. We build for legacy.
-                We train for mastery. We live for impact.
-              </p>
-            </div>
+            <div className="space-y-8">
+              {/* 1. Human First */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  1. Human First
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>Every structure begins and ends with the human being.</p>
+                  <p>Technology is a servant of consciousness, not its replacement.</p>
+                </div>
+              </div>
 
-            <div className="border-l-4 border-bim-gold pl-8">
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                5. Silence Over Noise
-              </h3>
-              <p className="text-lg">
-                The world is loud. We cultivate silence. In silence, clarity emerges.
-                In clarity, power is found. In power, legacy is built.
-              </p>
+              {/* 2. Privacy as Sacred */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  2. Privacy as Sacred
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>Data is not a resource. It is an extension of trust.</p>
+                  <p>All systems within Blueprint in Motion follow the principle of minimal collection and local processing.</p>
+                  <p>Nothing leaves the user's domain without consent. Ever.</p>
+                </div>
+              </div>
+
+              {/* 3. Transparency by Design */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  3. Transparency by Design
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>Every mechanism, transaction, and algorithm must be explainable in human language.</p>
+                  <p>If it cannot be explained, it cannot be deployed.</p>
+                  <p>Transparency is the architecture of trust.</p>
+                </div>
+              </div>
+
+              {/* 4. Non-Exploitation */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  4. Non-Exploitation
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>No manipulation, emotional or behavioral, will be coded or tolerated.</p>
+                  <p>Attention is treated as sacred currency — never as a commodity.</p>
+                </div>
+              </div>
+
+              {/* 5. Integrity over Innovation */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  5. Integrity over Innovation
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>Progress is not defined by how much we can do, but by how truthfully we can do it.</p>
+                  <p>Every new tool must align with the ethical framework before it enters the field.</p>
+                </div>
+              </div>
+
+              {/* 6. Consent and Clarity */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  6. Consent and Clarity
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>No interaction is assumed. Every form of data, presence, or participation requires conscious agreement.</p>
+                  <p>The user must always know what is happening, why, and with what consequence.</p>
+                </div>
+              </div>
+
+              {/* 7. The Human Witness */}
+              <div className="border-l-4 border-bim-gold pl-8 py-4">
+                <h3 className="font-oswald text-2xl text-bim-blue mb-4">
+                  7. The Human Witness
+                </h3>
+                <div className="text-lg text-gray-700 space-y-2">
+                  <p>Behind every interface stands a human witness who carries responsibility.</p>
+                  <p>Automation can assist, but never replace accountability.</p>
+                  <p>Every system remains traceable to a human origin.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Protocol */}
+      {/* Application Section */}
       <section className="py-20 px-4 sm:px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-oswald text-4xl text-bim-blue mb-8">
-            The BIM Protocol
-          </h2>
-
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <div>
-              <h3 className="font-oswald text-xl text-bim-blue mb-3">
-                What We Provide
-              </h3>
-              <ul className="space-y-2 ml-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Systematic frameworks for personal development across seven dimensions</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Tools and methods tested through real application</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Weekly FieldTalks on specific principles and practices</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Books, resources, and protocols for self-directed transformation</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-oswald text-xl text-bim-blue mb-3">
-                What We Don't Provide
-              </h3>
-              <ul className="space-y-2 ml-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Quick fixes or instant transformations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Emotional validation or comfort without growth</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Guarantees of success without your commitment</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Excuses for mediocrity or stagnation</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-oswald text-xl text-bim-blue mb-3">
-                What We Expect
-              </h3>
-              <ul className="space-y-2 ml-6">
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Personal responsibility for your own transformation</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Commitment to practice, not just consumption</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Honesty about where you are and where you want to go</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-bim-gold">▸</span>
-                  <span>Patience with the process and persistence through challenges</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Privacy & Terms */}
-      <section className="py-20 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-oswald text-4xl text-bim-blue mb-8">
-            Privacy & Terms
-          </h2>
-
-          <div className="space-y-8 text-gray-700 leading-relaxed">
-            <div>
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                Your Privacy
-              </h3>
-              <p className="mb-4">
-                We collect only what is necessary to provide our services. Your email for communications.
-                Your name for personalization. Your payment information for transactions (processed securely
-                through trusted third-party providers).
-              </p>
-              <p className="mb-4">
-                We do not sell your data. We do not share your information with third parties for
-                marketing purposes. Your privacy is non-negotiable.
+          <div className="border-l-4 border-bim-gold pl-8 py-4">
+            <h2 className="font-oswald text-3xl text-bim-blue mb-6">
+              Application
+            </h2>
+            <div className="text-lg text-gray-700 leading-relaxed space-y-4">
+              <p>
+                This charter applies to all divisions of the Blueprint ecosystem:<br />
+                Blueprint in Motion, BIM-Labs, Blueprint Retreats, and The Conscious Field.
               </p>
               <p>
-                You may request deletion of your data at any time by contacting us directly.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                Terms of Use
-              </h3>
-              <p className="mb-4">
-                All content provided by Blueprint In Motion is for educational and informational purposes.
-                It is not a substitute for professional medical, psychological, or financial advice.
-              </p>
-              <p className="mb-4">
-                You are responsible for your own choices and actions. BIM provides frameworks and tools,
-                but transformation requires your commitment and effort.
+                It is legally binding for every developer, contributor, and partner.<br />
+                It governs how technology, psychology, and economy interact within the Blueprint infrastructure.
               </p>
               <p>
-                All materials are protected by copyright. Personal use is permitted. Commercial use
-                or redistribution requires explicit permission.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                Refund Policy
-              </h3>
-              <p className="mb-4">
-                Digital products: 30-day money-back guarantee if you are not satisfied.
-              </p>
-              <p className="mb-4">
-                Physical books: Returns accepted within 14 days of delivery in original condition.
-              </p>
-              <p>
-                We stand behind our work. If it doesn't serve you, we'll refund your investment.
+                Violation of these principles results in immediate termination of access and collaboration.<br />
+                Alignment is voluntary, but once entered, it is sacred.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact */}
+      {/* Closing Statement */}
       <section className="py-20 px-4 sm:px-6 bg-bim-blue text-white">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-oswald text-4xl mb-6">
-            Questions About Our Integrity?
-          </h2>
-          <p className="text-xl text-gray-200 mb-8">
-            We value transparency. If you have questions about our charter, protocol,
-            or policies, reach out directly.
-          </p>
-          <a
-            href="#contact"
-            className="inline-block bg-bim-gold text-bim-blue px-8 py-3 rounded-lg font-oswald font-semibold hover:bg-yellow-400 transition-colors"
-          >
-            Contact Us
-          </a>
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center space-y-8">
+            <div className="text-2xl leading-relaxed">
+              <p className="mb-6">This Charter is not a contract.</p>
+              <p className="font-oswald text-3xl">It is a covenant.</p>
+            </div>
+
+            <div className="pt-8 border-t border-white/20 text-lg">
+              <p className="mb-2 italic">Signed in silence,</p>
+              <p className="font-oswald text-xl">Christian De Ley</p>
+              <p className="text-gray-200">Architect of Blueprint in Motion</p>
+            </div>
+          </div>
         </div>
       </section>
 
