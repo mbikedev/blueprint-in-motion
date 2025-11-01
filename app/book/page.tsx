@@ -26,7 +26,7 @@ export default function BookPage() {
       role: "Coach & Mentor"
     },
     {
-      quote: "Christian de Ley's insights on integrating all seven dimensions changed my life. This isn't just theory - it's a practical roadmap.",
+      quote: "Christian De Ley's insights on integrating all seven dimensions changed my life. This isn't just theory - it's a practical roadmap.",
       author: "Elena R.",
       role: "Wellness Consultant"
     }
@@ -54,7 +54,7 @@ export default function BookPage() {
                   <div className="w-full max-w-[280px] sm:max-w-sm aspect-[3/4] rounded-lg shadow-2xl overflow-hidden">
                     <Image
                       src="/images/book.webp"
-                      alt="Blueprint in Motion: From Survival to Legacy by Christian de Ley"
+                      alt="Blueprint in Motion: From Survival to Legacy by Christian De Ley"
                       width={800}
                       height={1067}
                       className="w-full h-full object-cover"
@@ -77,7 +77,7 @@ export default function BookPage() {
                 From Survival to Legacy
               </p>
               <p className="text-lg sm:text-xl text-blue-200 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
-                By <span className="font-semibold text-amber-300">Christian de Ley</span> - Architect of Motion
+                By <span className="font-semibold text-amber-300">Christian De Ley</span> - Architect of Motion
               </p>
               <p className="text-base sm:text-lg text-blue-100 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 Transform your life through mastery of seven essential dimensions.
@@ -436,7 +436,7 @@ export default function BookPage() {
               <div className="w-full aspect-square bg-gradient-to-br from-bim-blue to-blue-700 rounded-2xl flex items-center justify-center text-white">
                 <div className="text-center p-8">
                   <div className="text-8xl mb-4">👤</div>
-                  <p className="font-oswald text-3xl">Christian de Ley</p>
+                  <p className="font-oswald text-3xl">Christian De Ley</p>
                   <p className="text-blue-200 mt-2">Architect of Motion</p>
                 </div>
               </div>
@@ -444,17 +444,17 @@ export default function BookPage() {
             <div>
               <h2 className="font-oswald text-4xl mb-6">About the Author</h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Christian de Ley is a renowned transformation architect and the founder of Blueprint in Motion.
+                Christian De Ley is a renowned transformation architect and the founder of Blueprint in Motion.
                 With over two decades of experience in personal development, he has helped thousands of individuals
                 move from survival mode to creating lasting legacies.
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Known as the "Architect of Motion," Christian specializes in the integration of multiple life
+                Known as the "Architect of Motion," Christian De Ley specializes in the integration of multiple life
                 dimensions into a cohesive framework for transformation. His unique seven-dimension approach
                 has revolutionized how people think about personal growth.
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Through his work with BIM-Labs and this groundbreaking book, Christian continues to guide
+                Through his work with BIM-Labs and this groundbreaking book, Christian De Ley continues to guide
                 individuals on their journey from mere survival to creating meaningful, lasting impact.
               </p>
               <Link

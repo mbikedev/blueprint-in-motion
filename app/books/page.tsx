@@ -20,7 +20,7 @@ export default function BooksPage() {
                   <div className="w-full max-w-sm aspect-[3/4] rounded-lg shadow-2xl overflow-hidden bg-gray-800">
                     <Image
                       src="/images/book.webp"
-                      alt="Blueprint in Motion: From Survival to Legacy by Christian de Ley"
+                      alt="Blueprint in Motion: From Survival to Legacy by Christian De Ley"
                       width={800}
                       height={1067}
                       className="w-full h-full object-cover"
@@ -43,7 +43,7 @@ export default function BooksPage() {
                 From Survival to Legacy
               </p>
               <p className="text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-                By <span className="font-semibold text-bim-gold">Christian de Ley</span>
+                By <span className="font-semibold text-bim-gold">Christian De Ley</span>
               </p>
               <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 A systematic framework for masculine development. Seven fields of mastery.
@@ -226,7 +226,7 @@ export default function BooksPage() {
             About the Author
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Christian de Ley. Architect of Blueprint In Motion. Twenty years of study.
+            Christian De Ley. Architect of Blueprint In Motion. Twenty years of study.
             Ten years of testing. One systematic framework for masculine development.
             From survival to legacy.
           </p>

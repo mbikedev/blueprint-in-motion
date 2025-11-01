@@ -27,7 +27,7 @@ export default function AboutPage() {
                 The Architect
               </h2>
               <div className="text-lg space-y-4">
-                <p>My name is Christian De Ley</p>
+                <p>My name is Christian De Ley.</p>
                 <p>I am not here to motivate anyone.</p>
                 <p>I am here to build the architecture that makes change unavoidable.</p>
                 <p className="pt-4">

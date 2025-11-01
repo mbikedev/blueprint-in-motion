@@ -17,7 +17,7 @@ export default function Home() {
               <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/20">
                 <Image
                   src="/images/chris.jpeg"
-                  alt="Christian D. L."
+                  alt="Christian De Ley"
                   width={192}
                   height={192}
                   className="w-full h-full object-cover"
@@ -50,7 +50,7 @@ export default function Home() {
                 The Architect
               </h2>
               <div className="text-lg space-y-4">
-                <p>My name is Christian D. L.</p>
+                <p>My name is Christian De Ley.</p>
                 <p>I am not here to motivate anyone.</p>
                 <p>I am here to build the architecture that makes change unavoidable.</p>
                 <p className="pt-4">
