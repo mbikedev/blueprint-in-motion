@@ -11,7 +11,6 @@ const Navigation = () => {
     { href: '/blueprint-manifest', label: 'Blueprint Manifest' },
     { href: '/books', label: 'The Books' },
     { href: '/fieldtalks', label: 'FieldTalks' },
-    { href: '/about', label: 'About' },
     { href: '/integrity', label: 'Integrity' },
   ]
 
@@ -24,8 +23,8 @@ const Navigation = () => {
               <Image
                 src="/images/bim-logo.webp"
                 alt="Blueprint In Motion Logo"
-                width={80}
-                height={80}
+                width={40}
+                height={40}
                 className="h-10 w-10"
                 priority
               />
