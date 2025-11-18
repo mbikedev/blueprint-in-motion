@@ -26,7 +26,8 @@
       "Bash(gh api:*)",
       "Bash(git checkout:*)",
       "Bash(DATABASE_URL=\"file:./dev.db\" npx prisma validate:*)",
-      "Read(//Users/mbike/Downloads/**)"
+      "Read(//Users/mbike/Downloads/**)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

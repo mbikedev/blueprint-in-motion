@@ -1,7 +1,10 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { useTranslations } from 'next-intl'
 
 export default function IntegrityPage() {
+  const t = useTranslations('integrity')
+
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
@@ -10,10 +13,10 @@ export default function IntegrityPage() {
       <section className="py-20 px-4 sm:px-6 bg-bim-blue text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-oswald text-5xl mb-6">
-            Blueprint Integrity Charter
+            {t('hero.title')}
           </h1>
           <p className="text-xl text-gray-200 leading-relaxed">
-            Our covenant. Our foundation. Our sacred commitment.
+            {t('hero.subtitle')}
           </p>
         </div>
       </section>
@@ -23,42 +26,42 @@ export default function IntegrityPage() {
         <div className="max-w-4xl mx-auto">
           <div className="border-l-4 border-bim-gold pl-8 py-4 mb-16">
             <h2 className="font-oswald text-3xl text-bim-blue mb-8">
-              Founders' Declaration
+              {t('foundersDeclaration.title')}
             </h2>
             <div className="text-lg space-y-4 text-gray-700 leading-relaxed">
-              <p>I did not create Blueprint in Motion to extract or to manipulate.</p>
-              <p>I created it to restore integrity in a world that has turned awareness into a product.</p>
+              <p>{t('foundersDeclaration.notExtract')}</p>
+              <p>{t('foundersDeclaration.restore')}</p>
 
               <p className="pt-4">
-                Every line of code, every word, every design and decision must serve one purpose:<br />
-                to elevate human consciousness, not to harvest it.
+                {t('foundersDeclaration.everyLine')}<br />
+                {t('foundersDeclaration.elevate')}
               </p>
 
               <p className="pt-4">
-                Technology should mirror the human soul, not market it.<br />
-                Privacy is sacred, not negotiable.<br />
-                Transparency is a right, not a privilege.<br />
-                Innovation without ethics is regression disguised as progress.
+                {t('foundersDeclaration.technologyMirror')}<br />
+                {t('foundersDeclaration.privacySacred')}<br />
+                {t('foundersDeclaration.transparencyRight')}<br />
+                {t('foundersDeclaration.innovationEthics')}
               </p>
 
               <p className="pt-4">
-                No data will ever be sold.<br />
-                No behavior will ever be gamified for profit.<br />
-                No manipulation will ever hide behind optimization.
+                {t('foundersDeclaration.noDataSold')}<br />
+                {t('foundersDeclaration.noBehavior')}<br />
+                {t('foundersDeclaration.noManipulation')}
               </p>
 
               <p className="pt-4">
-                Blueprint in Motion exists to remind both creators and users that consciousness must remain the owner of its tools.<br />
-                When technology starts to witness rather than exploit, humanity evolves — not by force, but by presence.
+                {t('foundersDeclaration.exists')}<br />
+                {t('foundersDeclaration.witness')}
               </p>
             </div>
 
             {/* Blueprint Principle */}
             <div className="bg-gray-50 border-2 border-bim-gold p-6 mt-8">
               <p className="font-oswald text-lg text-bim-blue text-center italic">
-                Blueprint Principle:<br />
+                {t('principle.title')}<br />
                 <span className="text-gray-700 not-italic">
-                  Integrity is not a feature. It is the foundation that allows truth to function.
+                  {t('principle.text')}
                 </span>
               </p>
             </div>
@@ -67,87 +70,87 @@ export default function IntegrityPage() {
           {/* Seven Ethical Foundations */}
           <div className="mb-16">
             <h2 className="font-oswald text-4xl text-bim-blue mb-12 text-center">
-              The Seven Ethical Foundations
+              {t('sevenFoundations.title')}
             </h2>
 
             <div className="space-y-8">
               {/* 1. Human First */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  1. Human First
+                  {t('sevenFoundations.humanFirst.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>Every structure begins and ends with the human being.</p>
-                  <p>Technology is a servant of consciousness, not its replacement.</p>
+                  <p>{t('sevenFoundations.humanFirst.begins')}</p>
+                  <p>{t('sevenFoundations.humanFirst.servant')}</p>
                 </div>
               </div>
 
               {/* 2. Privacy as Sacred */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  2. Privacy as Sacred
+                  {t('sevenFoundations.privacySacred.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>Data is not a resource. It is an extension of trust.</p>
-                  <p>All systems within Blueprint in Motion follow the principle of minimal collection and local processing.</p>
-                  <p>Nothing leaves the user's domain without consent. Ever.</p>
+                  <p>{t('sevenFoundations.privacySacred.notResource')}</p>
+                  <p>{t('sevenFoundations.privacySacred.minimal')}</p>
+                  <p>{t('sevenFoundations.privacySacred.nothingLeaves')}</p>
                 </div>
               </div>
 
               {/* 3. Transparency by Design */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  3. Transparency by Design
+                  {t('sevenFoundations.transparency.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>Every mechanism, transaction, and algorithm must be explainable in human language.</p>
-                  <p>If it cannot be explained, it cannot be deployed.</p>
-                  <p>Transparency is the architecture of trust.</p>
+                  <p>{t('sevenFoundations.transparency.explainable')}</p>
+                  <p>{t('sevenFoundations.transparency.cannotExplain')}</p>
+                  <p>{t('sevenFoundations.transparency.architecture')}</p>
                 </div>
               </div>
 
               {/* 4. Non-Exploitation */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  4. Non-Exploitation
+                  {t('sevenFoundations.nonExploitation.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>No manipulation, emotional or behavioral, will be coded or tolerated.</p>
-                  <p>Attention is treated as sacred currency — never as a commodity.</p>
+                  <p>{t('sevenFoundations.nonExploitation.noManipulation')}</p>
+                  <p>{t('sevenFoundations.nonExploitation.attention')}</p>
                 </div>
               </div>
 
               {/* 5. Integrity over Innovation */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  5. Integrity over Innovation
+                  {t('sevenFoundations.integrityOverInnovation.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>Progress is not defined by how much we can do, but by how truthfully we can do it.</p>
-                  <p>Every new tool must align with the ethical framework before it enters the field.</p>
+                  <p>{t('sevenFoundations.integrityOverInnovation.notDefined')}</p>
+                  <p>{t('sevenFoundations.integrityOverInnovation.align')}</p>
                 </div>
               </div>
 
               {/* 6. Consent and Clarity */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  6. Consent and Clarity
+                  {t('sevenFoundations.consent.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>No interaction is assumed. Every form of data, presence, or participation requires conscious agreement.</p>
-                  <p>The user must always know what is happening, why, and with what consequence.</p>
+                  <p>{t('sevenFoundations.consent.noAssumed')}</p>
+                  <p>{t('sevenFoundations.consent.mustKnow')}</p>
                 </div>
               </div>
 
               {/* 7. The Human Witness */}
               <div className="border-l-4 border-bim-gold pl-8 py-4">
                 <h3 className="font-oswald text-2xl text-bim-blue mb-4">
-                  7. The Human Witness
+                  {t('sevenFoundations.humanWitness.title')}
                 </h3>
                 <div className="text-lg text-gray-700 space-y-2">
-                  <p>Behind every interface stands a human witness who carries responsibility.</p>
-                  <p>Automation can assist, but never replace accountability.</p>
-                  <p>Every system remains traceable to a human origin.</p>
+                  <p>{t('sevenFoundations.humanWitness.behind')}</p>
+                  <p>{t('sevenFoundations.humanWitness.assist')}</p>
+                  <p>{t('sevenFoundations.humanWitness.traceable')}</p>
                 </div>
               </div>
             </div>
@@ -160,20 +163,20 @@ export default function IntegrityPage() {
         <div className="max-w-4xl mx-auto">
           <div className="border-l-4 border-bim-gold pl-8 py-4">
             <h2 className="font-oswald text-3xl text-bim-blue mb-6">
-              Application
+              {t('application.title')}
             </h2>
             <div className="text-lg text-gray-700 leading-relaxed space-y-4">
               <p>
-                This charter applies to all divisions of the Blueprint ecosystem:<br />
-                Blueprint in Motion, BIM-Labs, Blueprint Retreats, and The Conscious Field.
+                {t('application.applies')}<br />
+                {t('application.divisions')}
               </p>
               <p>
-                It is legally binding for every developer, contributor, and partner.<br />
-                It governs how technology, psychology, and economy interact within the Blueprint infrastructure.
+                {t('application.binding')}<br />
+                {t('application.governs')}
               </p>
               <p>
-                Violation of these principles results in immediate termination of access and collaboration.<br />
-                Alignment is voluntary, but once entered, it is sacred.
+                {t('application.violation')}<br />
+                {t('application.alignment')}
               </p>
             </div>
           </div>
@@ -185,14 +188,14 @@ export default function IntegrityPage() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center space-y-8">
             <div className="text-2xl leading-relaxed">
-              <p className="mb-6">This Charter is not a contract.</p>
-              <p className="font-oswald text-3xl">It is a covenant.</p>
+              <p className="mb-6">{t('closing.notContract')}</p>
+              <p className="font-oswald text-3xl">{t('closing.covenant')}</p>
             </div>
 
             <div className="pt-8 border-t border-white/20 text-lg">
-              <p className="mb-2 italic">Signed in silence,</p>
-              <p className="font-oswald text-xl">Christian De Ley</p>
-              <p className="text-gray-200">Architect of Blueprint in Motion</p>
+              <p className="mb-2 italic">{t('closing.signed')}</p>
+              <p className="font-oswald text-xl">{t('closing.name')}</p>
+              <p className="text-gray-200">{t('closing.role')}</p>
             </div>
           </div>
         </div>

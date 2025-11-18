@@ -1,18 +1,22 @@
+'use client'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const Footer = () => {
+  const t = useTranslations('footer')
+
   return (
     <footer className="bg-bim-blue text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           {/* Contact Form */}
           <div>
-            <h3 className="font-oswald text-2xl mb-6">Get in Touch</h3>
+            <h3 className="font-oswald text-2xl mb-6">{t('getInTouch')}</h3>
             <form className="space-y-4">
               <div>
                 <input
                   type="text"
-                  placeholder="Name"
+                  placeholder={t('name')}
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-bim-gold"
                   required
                 />
@@ -20,14 +24,14 @@ const Footer = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder={t('email')}
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-bim-gold"
                   required
                 />
               </div>
               <div>
                 <textarea
-                  placeholder="Message"
+                  placeholder={t('message')}
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-bim-gold resize-none"
                   required
@@ -37,7 +41,7 @@ const Footer = () => {
                 type="submit"
                 className="bg-bim-gold text-bim-blue px-6 py-3 rounded-lg font-oswald font-semibold hover:bg-yellow-400 transition-colors"
               >
-                Send Message
+                {t('sendMessage')}
               </button>
             </form>
           </div>
@@ -45,62 +49,62 @@ const Footer = () => {
           {/* Links */}
           <div className="grid grid-cols-2 gap-8">
             <div>
-              <h4 className="font-oswald text-lg mb-4">Navigate</h4>
+              <h4 className="font-oswald text-lg mb-4">{t('navigate')}</h4>
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    Home
+                    {t('home')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/blueprint-manifest" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    Blueprint Manifest
+                    {t('blueprintManifest')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/books" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    The Books
+                    {t('books')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/fieldtalks" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    FieldTalks
+                    {t('fieldtalks')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/about" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    About
+                    {t('about')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/integrity" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    Integrity
+                    {t('integrity')}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-oswald text-lg mb-4">Legal</h4>
+              <h4 className="font-oswald text-lg mb-4">{t('legal')}</h4>
               <ul className="space-y-2">
                 <li>
                   <Link href="/integrity#privacy" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    Privacy Policy
+                    {t('privacyPolicy')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/integrity#terms" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    Terms of Use
+                    {t('termsOfUse')}
                   </Link>
                 </li>
                 <li>
                   <Link href="/integrity#refund" className="text-gray-200 hover:text-bim-gold transition-colors">
-                    Refund Policy
+                    {t('refundPolicy')}
                   </Link>
                 </li>
               </ul>
 
-              <h4 className="font-oswald text-lg mb-4 mt-8">Connect</h4>
+              <h4 className="font-oswald text-lg mb-4 mt-8">{t('connect')}</h4>
               <div className="flex gap-4">
                 <a
                   href="https://twitter.com/blueprintinmotion"
@@ -145,10 +149,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="font-oswald text-xl mb-1">Blueprint In Motion</p>
-              <p className="text-sm text-gray-300">From Survival to Legacy</p>
+              <p className="text-sm text-gray-300">{t('tagline')}</p>
             </div>
             <div className="text-center md:text-right text-sm text-gray-300">
-              <p>&copy; {new Date().getFullYear()} Blueprint In Motion. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Blueprint In Motion. {t('copyright')}</p>
             </div>
           </div>
         </div>

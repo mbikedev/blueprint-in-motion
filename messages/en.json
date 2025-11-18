@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "home": "Home",
+    "blueprintManifest": "Blueprint Manifest",
+    "books": "The Books",
+    "fieldtalks": "FieldTalks",
+    "integrity": "Integrity"
+  },
+  "footer": {
+    "getInTouch": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "navigate": "Navigate",
+    "home": "Home",
+    "blueprintManifest": "Blueprint Manifest",
+    "books": "The Books",
+    "fieldtalks": "FieldTalks",
+    "about": "About",
+    "integrity": "Integrity",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "refundPolicy": "Refund Policy",
+    "connect": "Connect",
+    "tagline": "From Survival to Legacy",
+    "copyright": "All rights reserved."
+  },
+  "landing": {
+    "hero": {
+      "title": "Blueprint In Motion",
+      "subtitle": "Architecture that makes change unavoidable"
+    },
+    "architect": {
+      "title": "The Architect",
+      "intro": "My name is Christian De Ley.",
+      "notMotivate": "I am not here to motivate anyone.",
+      "buildArchitecture": "I am here to build the architecture that makes change unavoidable.",
+      "workedInSilence": "For years I worked in silence.",
+      "nightsAndDays": "Nights in institutions. Days in garages.",
+      "noiseAndRestlessness": "Noise around me. Restlessness inside me.",
+      "menAwake": "At some point I realised most men are awake only enough to function, not to live.",
+      "beganAsNecessity": "Blueprint in Motion began as a necessity.",
+      "structureThatHolds": "A structure that could hold truth without collapsing.",
+      "disciplineThatTurns": "A discipline that could turn pain into movement."
+    },
+    "why": {
+      "title": "The Why",
+      "worshipsDistraction": "We live in a time that worships distraction.",
+      "menScroll": "Men scroll, chase, consume, and call it living.",
+      "awarenessRebellion": "Awareness has become rebellion.",
+      "builtToRestore": "I built this work to restore direction.",
+      "bringStructure": "To bring structure where chaos pretends to be freedom.",
+      "remindMen": "To remind men that silence is not weakness but calibration.",
+      "clarityConsequence": "That clarity is not a gift but a consequence."
+    },
+    "system": {
+      "title": "The System",
+      "notMethod": "Blueprint in Motion is not a method. It is a mirror.",
+      "sevenFields": "Seven Fields reflect seven dimensions of mastery:",
+      "fields": "Physical. Emotional. Psychological. Relational. Financial. Spiritual. Quantum.",
+      "revealsResistance": "Each field reveals where a man resists himself.",
+      "emotionInformation": "Where emotion becomes information.",
+      "disciplinePresence": "Where discipline turns into presence.",
+      "exploreOneByOne": "You can explore them one by one.",
+      "startFieldTalks": "Or you can start reading FieldTalks, where the framework moves in real time.",
+      "theoryBreathes": "That is where theory breathes and structure becomes story."
+    },
+    "ethic": {
+      "title": "The Ethic",
+      "sellsAttention": "The modern world sells attention.",
+      "weProtect": "We protect it.",
+      "noTracking": "No tracking. No manipulation. No hidden extraction.",
+      "privacySacred": "Privacy is sacred. Presence is currency.",
+      "integrityCharter": "Everything here operates under the Blueprint Integrity Charter.",
+      "notRulebook": "It is not a rulebook but a vow.",
+      "reminderEthics": "A reminder that innovation without ethics is just ego in disguise.",
+      "builtToProve": "Blueprint in Motion was built to prove one thing.",
+      "consciousnessExpand": "That consciousness can expand without losing its centre."
+    },
+    "motion": {
+      "title": "The Motion",
+      "labsToRetreats": "From Blueprint Labs to Blueprint Retreats, everything points to one horizon.",
+      "consciousField": "The Conscious Field.",
+      "notNewTech": "Not a new technology. A new responsibility.",
+      "notebookToMovement": "This began as a notebook and became a movement.",
+      "menRebuilding": "Men rebuilding themselves through observation, discipline, and brotherhood.",
+      "motionNeedsWords": "When motion needs words, it becomes FieldTalks.",
+      "awarenessTrace": "Where awareness leaves a trace so others can find their own."
+    },
+    "contact": {
+      "title": "Contact",
+      "notForEveryone": "This space is not for everyone.",
+      "forThoseWhoFeel": "It is for those who feel the quiet pull to wake up.",
+      "noForms": "No forms. No filters.",
+      "ifSomethingMoves": "If something in you moves, follow that.",
+      "reachOut": "Reach out in silence.",
+      "meetThere": "We will meet there."
+    },
+    "principle": {
+      "title": "Blueprint Principle:",
+      "text": "Integrity is not a feature. It is the foundation that allows truth to function."
+    },
+    "cta": {
+      "title": "Ready to Begin?",
+      "subtitle": "Start with the Blueprint. Study the fields. Apply the protocols.",
+      "getBook": "Get the Book",
+      "exploreFieldTalks": "Explore FieldTalks"
+    }
+  },
+  "integrity": {
+    "hero": {
+      "title": "Blueprint Integrity Charter",
+      "subtitle": "Our covenant. Our foundation. Our sacred commitment."
+    },
+    "foundersDeclaration": {
+      "title": "Founders' Declaration",
+      "notExtract": "I did not create Blueprint in Motion to extract or to manipulate.",
+      "restore": "I created it to restore integrity in a world that has turned awareness into a product.",
+      "everyLine": "Every line of code, every word, every design and decision must serve one purpose:",
+      "elevate": "to elevate human consciousness, not to harvest it.",
+      "technologyMirror": "Technology should mirror the human soul, not market it.",
+      "privacySacred": "Privacy is sacred, not negotiable.",
+      "transparencyRight": "Transparency is a right, not a privilege.",
+      "innovationEthics": "Innovation without ethics is regression disguised as progress.",
+      "noDataSold": "No data will ever be sold.",
+      "noBehavior": "No behavior will ever be gamified for profit.",
+      "noManipulation": "No manipulation will ever hide behind optimization.",
+      "exists": "Blueprint in Motion exists to remind both creators and users that consciousness must remain the owner of its tools.",
+      "witness": "When technology starts to witness rather than exploit, humanity evolves — not by force, but by presence."
+    },
+    "principle": {
+      "title": "Blueprint Principle:",
+      "text": "Integrity is not a feature. It is the foundation that allows truth to function."
+    },
+    "sevenFoundations": {
+      "title": "The Seven Ethical Foundations",
+      "humanFirst": {
+        "title": "1. Human First",
+        "begins": "Every structure begins and ends with the human being.",
+        "servant": "Technology is a servant of consciousness, not its replacement."
+      },
+      "privacySacred": {
+        "title": "2. Privacy as Sacred",
+        "notResource": "Data is not a resource. It is an extension of trust.",
+        "minimal": "All systems within Blueprint in Motion follow the principle of minimal collection and local processing.",
+        "nothingLeaves": "Nothing leaves the user's domain without consent. Ever."
+      },
+      "transparency": {
+        "title": "3. Transparency by Design",
+        "explainable": "Every mechanism, transaction, and algorithm must be explainable in human language.",
+        "cannotExplain": "If it cannot be explained, it cannot be deployed.",
+        "architecture": "Transparency is the architecture of trust."
+      },
+      "nonExploitation": {
+        "title": "4. Non-Exploitation",
+        "noManipulation": "No manipulation, emotional or behavioral, will be coded or tolerated.",
+        "attention": "Attention is treated as sacred currency — never as a commodity."
+      },
+      "integrityOverInnovation": {
+        "title": "5. Integrity over Innovation",
+        "notDefined": "Progress is not defined by how much we can do, but by how truthfully we can do it.",
+        "align": "Every new tool must align with the ethical framework before it enters the field."
+      },
+      "consent": {
+        "title": "6. Consent and Clarity",
+        "noAssumed": "No interaction is assumed. Every form of data, presence, or participation requires conscious agreement.",
+        "mustKnow": "The user must always know what is happening, why, and with what consequence."
+      },
+      "humanWitness": {
+        "title": "7. The Human Witness",
+        "behind": "Behind every interface stands a human witness who carries responsibility.",
+        "assist": "Automation can assist, but never replace accountability.",
+        "traceable": "Every system remains traceable to a human origin."
+      }
+    },
+    "application": {
+      "title": "Application",
+      "applies": "This charter applies to all divisions of the Blueprint ecosystem:",
+      "divisions": "Blueprint in Motion, BIM-Labs, Blueprint Retreats, and The Conscious Field.",
+      "binding": "It is legally binding for every developer, contributor, and partner.",
+      "governs": "It governs how technology, psychology, and economy interact within the Blueprint infrastructure.",
+      "violation": "Violation of these principles results in immediate termination of access and collaboration.",
+      "alignment": "Alignment is voluntary, but once entered, it is sacred."
+    },
+    "closing": {
+      "notContract": "This Charter is not a contract.",
+      "covenant": "It is a covenant.",
+      "signed": "Signed in silence,",
+      "name": "Christian De Ley",
+      "role": "Architect of Blueprint in Motion"
+    }
+  }
+}

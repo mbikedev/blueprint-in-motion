@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "home": "Home",
+    "blueprintManifest": "Blueprint Manifest",
+    "books": "De Boeken",
+    "fieldtalks": "FieldTalks",
+    "integrity": "Integriteit"
+  },
+  "footer": {
+    "getInTouch": "Neem Contact Op",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Bericht",
+    "sendMessage": "Verstuur Bericht",
+    "navigate": "Navigeer",
+    "home": "Home",
+    "blueprintManifest": "Blueprint Manifest",
+    "books": "De Boeken",
+    "fieldtalks": "FieldTalks",
+    "about": "Over",
+    "integrity": "Integriteit",
+    "legal": "Juridisch",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfUse": "Gebruiksvoorwaarden",
+    "refundPolicy": "Terugbetalingsbeleid",
+    "connect": "Verbind",
+    "tagline": "Van Overleven naar Nalatenschap",
+    "copyright": "Alle rechten voorbehouden."
+  },
+  "landing": {
+    "hero": {
+      "title": "Blueprint In Motion",
+      "subtitle": "Architectuur die verandering onontkoombaar maakt"
+    },
+    "architect": {
+      "title": "De Architect",
+      "intro": "Mijn naam is Christian De Ley.",
+      "notMotivate": "Ik ben hier niet om iemand te motiveren.",
+      "buildArchitecture": "Ik ben hier om de architectuur te bouwen die verandering onontkoombaar maakt.",
+      "workedInSilence": "Jarenlang werkte ik in stilte.",
+      "nightsAndDays": "Nachten in instellingen. Dagen in garages.",
+      "noiseAndRestlessness": "Lawaai om me heen. Rusteloosheid in me.",
+      "menAwake": "Op een gegeven moment realiseerde ik me dat de meeste mannen alleen wakker genoeg zijn om te functioneren, niet om te leven.",
+      "beganAsNecessity": "Blueprint in Motion begon als een noodzaak.",
+      "structureThatHolds": "Een structuur die waarheid kon vasthouden zonder in te storten.",
+      "disciplineThatTurns": "Een discipline die pijn in beweging kon veranderen."
+    },
+    "why": {
+      "title": "Het Waarom",
+      "worshipsDistraction": "We leven in een tijd die afleiding aanbidt.",
+      "menScroll": "Mannen scrollen, jagen, consumeren en noemen het leven.",
+      "awarenessRebellion": "Bewustzijn is rebellie geworden.",
+      "builtToRestore": "Ik heb dit werk gebouwd om richting te herstellen.",
+      "bringStructure": "Om structuur te brengen waar chaos vrijheid voorwendt.",
+      "remindMen": "Om mannen eraan te herinneren dat stilte geen zwakte is maar kalibratie.",
+      "clarityConsequence": "Dat helderheid geen geschenk is maar een consequentie."
+    },
+    "system": {
+      "title": "Het Systeem",
+      "notMethod": "Blueprint in Motion is geen methode. Het is een spiegel.",
+      "sevenFields": "Zeven Velden weerspiegelen zeven dimensies van meesterschap:",
+      "fields": "Fysiek. Emotioneel. Psychologisch. Relationeel. Financieel. Spiritueel. Kwantum.",
+      "revealsResistance": "Elk veld onthult waar een man zichzelf weerstaat.",
+      "emotionInformation": "Waar emotie informatie wordt.",
+      "disciplinePresence": "Waar discipline aanwezigheid wordt.",
+      "exploreOneByOne": "Je kunt ze een voor een verkennen.",
+      "startFieldTalks": "Of je kunt beginnen met het lezen van FieldTalks, waar het raamwerk in real-time beweegt.",
+      "theoryBreathes": "Dat is waar theorie ademt en structuur verhaal wordt."
+    },
+    "ethic": {
+      "title": "De Ethiek",
+      "sellsAttention": "De moderne wereld verkoopt aandacht.",
+      "weProtect": "Wij beschermen het.",
+      "noTracking": "Geen tracking. Geen manipulatie. Geen verborgen extractie.",
+      "privacySacred": "Privacy is heilig. Aanwezigheid is munt.",
+      "integrityCharter": "Alles hier werkt onder het Blueprint Integriteitshandvest.",
+      "notRulebook": "Het is geen regelboek maar een gelofte.",
+      "reminderEthics": "Een herinnering dat innovatie zonder ethiek gewoon ego in vermomming is.",
+      "builtToProve": "Blueprint in Motion is gebouwd om één ding te bewijzen.",
+      "consciousnessExpand": "Dat bewustzijn kan uitbreiden zonder zijn centrum te verliezen."
+    },
+    "motion": {
+      "title": "De Beweging",
+      "labsToRetreats": "Van Blueprint Labs tot Blueprint Retreats, alles wijst naar één horizon.",
+      "consciousField": "Het Bewuste Veld.",
+      "notNewTech": "Geen nieuwe technologie. Een nieuwe verantwoordelijkheid.",
+      "notebookToMovement": "Dit begon als een notitieboek en werd een beweging.",
+      "menRebuilding": "Mannen die zichzelf herbouwen door observatie, discipline en broederschap.",
+      "motionNeedsWords": "Wanneer beweging woorden nodig heeft, wordt het FieldTalks.",
+      "awarenessTrace": "Waar bewustzijn een spoor achterlaat zodat anderen hun eigen weg kunnen vinden."
+    },
+    "contact": {
+      "title": "Contact",
+      "notForEveryone": "Deze ruimte is niet voor iedereen.",
+      "forThoseWhoFeel": "Het is voor degenen die de stille drang voelen om wakker te worden.",
+      "noForms": "Geen formulieren. Geen filters.",
+      "ifSomethingMoves": "Als er iets in je beweegt, volg dat.",
+      "reachOut": "Neem contact op in stilte.",
+      "meetThere": "We ontmoeten elkaar daar."
+    },
+    "principle": {
+      "title": "Blueprint Principe:",
+      "text": "Integriteit is geen kenmerk. Het is de basis die waarheid laat functioneren."
+    },
+    "cta": {
+      "title": "Klaar om te Beginnen?",
+      "subtitle": "Begin met de Blueprint. Bestudeer de velden. Pas de protocollen toe.",
+      "getBook": "Koop het Boek",
+      "exploreFieldTalks": "Verken FieldTalks"
+    }
+  },
+  "integrity": {
+    "hero": {
+      "title": "Blueprint Integriteitshandvest",
+      "subtitle": "Ons verbond. Ons fundament. Onze heilige toewijding."
+    },
+    "foundersDeclaration": {
+      "title": "Verklaring van de Oprichter",
+      "notExtract": "Ik heb Blueprint in Motion niet gecreëerd om te onttrekken of te manipuleren.",
+      "restore": "Ik heb het gecreëerd om integriteit te herstellen in een wereld die bewustzijn in een product heeft veranderd.",
+      "everyLine": "Elke regel code, elk woord, elk ontwerp en elke beslissing moet één doel dienen:",
+      "elevate": "het verheffen van menselijk bewustzijn, niet het oogsten ervan.",
+      "technologyMirror": "Technologie moet de menselijke ziel weerspiegelen, niet vermarkten.",
+      "privacySacred": "Privacy is heilig, niet onderhandelbaar.",
+      "transparencyRight": "Transparantie is een recht, geen privilege.",
+      "innovationEthics": "Innovatie zonder ethiek is regressie vermomd als vooruitgang.",
+      "noDataSold": "Geen data zal ooit verkocht worden.",
+      "noBehavior": "Geen gedrag zal ooit gegamificeerd worden voor winst.",
+      "noManipulation": "Geen manipulatie zal ooit verborgen zijn achter optimalisatie.",
+      "exists": "Blueprint in Motion bestaat om zowel makers als gebruikers eraan te herinneren dat bewustzijn eigenaar moet blijven van zijn instrumenten.",
+      "witness": "Wanneer technologie begint te getuigen in plaats van te exploiteren, evolueert de mensheid — niet door dwang, maar door aanwezigheid."
+    },
+    "principle": {
+      "title": "Blueprint Principe:",
+      "text": "Integriteit is geen kenmerk. Het is de basis die waarheid laat functioneren."
+    },
+    "sevenFoundations": {
+      "title": "De Zeven Ethische Fundamenten",
+      "humanFirst": {
+        "title": "1. Mens Eerst",
+        "begins": "Elke structuur begint en eindigt met het menselijk wezen.",
+        "servant": "Technologie is een dienaar van bewustzijn, niet de vervanging ervan."
+      },
+      "privacySacred": {
+        "title": "2. Privacy als Heilig",
+        "notResource": "Data is geen hulpbron. Het is een uitbreiding van vertrouwen.",
+        "minimal": "Alle systemen binnen Blueprint in Motion volgen het principe van minimale verzameling en lokale verwerking.",
+        "nothingLeaves": "Niets verlaat het domein van de gebruiker zonder toestemming. Nooit."
+      },
+      "transparency": {
+        "title": "3. Transparantie door Ontwerp",
+        "explainable": "Elk mechanisme, elke transactie en elk algoritme moet uitlegbaar zijn in menselijke taal.",
+        "cannotExplain": "Als het niet uitgelegd kan worden, kan het niet worden ingezet.",
+        "architecture": "Transparantie is de architectuur van vertrouwen."
+      },
+      "nonExploitation": {
+        "title": "4. Geen Uitbuiting",
+        "noManipulation": "Geen manipulatie, emotioneel of gedragsmatig, zal gecodeerd of getolereerd worden.",
+        "attention": "Aandacht wordt behandeld als heilige munt — nooit als een handelswaar."
+      },
+      "integrityOverInnovation": {
+        "title": "5. Integriteit boven Innovatie",
+        "notDefined": "Vooruitgang wordt niet gedefinieerd door hoeveel we kunnen doen, maar door hoe waarachtig we het kunnen doen.",
+        "align": "Elk nieuw instrument moet aansluiten bij het ethisch raamwerk voordat het het veld betreedt."
+      },
+      "consent": {
+        "title": "6. Toestemming en Helderheid",
+        "noAssumed": "Geen interactie wordt verondersteld. Elke vorm van data, aanwezigheid of participatie vereist bewuste instemming.",
+        "mustKnow": "De gebruiker moet altijd weten wat er gebeurt, waarom, en met welk gevolg."
+      },
+      "humanWitness": {
+        "title": "7. De Menselijke Getuige",
+        "behind": "Achter elke interface staat een menselijke getuige die verantwoordelijkheid draagt.",
+        "assist": "Automatisering kan assisteren, maar nooit verantwoordelijkheid vervangen.",
+        "traceable": "Elk systeem blijft traceerbaar naar een menselijke oorsprong."
+      }
+    },
+    "application": {
+      "title": "Toepassing",
+      "applies": "Dit handvest is van toepassing op alle divisies van het Blueprint ecosysteem:",
+      "divisions": "Blueprint in Motion, BIM-Labs, Blueprint Retreats en The Conscious Field.",
+      "binding": "Het is juridisch bindend voor elke ontwikkelaar, bijdrager en partner.",
+      "governs": "Het regelt hoe technologie, psychologie en economie interageren binnen de Blueprint infrastructuur.",
+      "violation": "Schending van deze principes resulteert in onmiddellijke beëindiging van toegang en samenwerking.",
+      "alignment": "Afstemming is vrijwillig, maar eenmaal aangegaan, is het heilig."
+    },
+    "closing": {
+      "notContract": "Dit Handvest is geen contract.",
+      "covenant": "Het is een verbond.",
+      "signed": "Ondertekend in stilte,",
+      "name": "Christian De Ley",
+      "role": "Architect van Blueprint in Motion"
+    }
+  }
+}
